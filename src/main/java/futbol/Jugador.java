@@ -9,10 +9,8 @@ public class Jugador extends Futbolista {
         this.golesMarcados = golesMarcados;
         this.dorsal = dorsal;
     }
-
     public Jugador() {
         super();
         this.golesMarcados = 289;
         this.dorsal = 7;
     }
-}
