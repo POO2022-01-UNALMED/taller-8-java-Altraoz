@@ -14,3 +14,16 @@ public class Jugador extends Futbolista {
         this.golesMarcados = 289;
         this.dorsal = 7;
     }
+
+    @Override
+    public int compareTo(Object futbolista) {
+        var otroJugador = (Jugador) futbolista;
+        return super.getEdad() - otroJugador.getEdad() ;
+    }
+
+    @Override
+    public String toString() {return super.toString() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;}
+
+    @Override
+    public boolean jugarConLasManos() {return false;}
+}
